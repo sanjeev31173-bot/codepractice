@@ -1,0 +1,45 @@
+Analyze Test Execution Logs
+You are given a list of test execution logs. Write a Python program that analyzes the logs and generates a summary.
+
+Input:
+logs = [    "LOGIN:PASS:2.1",    "UPLOAD:FAIL:5.4",    "SEARCH:PASS:1.2",    "LOGIN:PASS:1.8",    "UPLOAD:PASS:4.2",    "SEARCH:FAIL:3.5",    "LOGIN:FAIL:6.1",    "UPLOAD:FAIL:2.8"]
+
+
+
+Each log follows this format:
+
+TEST_NAME:STATUS:EXECUTION_TIME
+
+For example, "UPLOAD:FAIL:5.4" means the UPLOAD test failed and took 5.4 seconds.
+Your tasks
+1. Count results: Find the total number of passed and failed tests.
+2. Group by test name: Count how many times each test passed or failed.
+3. Calculate average execution time: Find the average time for all tests.
+4. Find the slowest test: Identify the test with the highest execution time.
+5. Find flaky tests: A test is considered flaky if it has both PASS and FAIL results across its executions.
+6. Generate a report: Display the results in a readable format.
+Expected output
+Your output should contain these results:
+Total tests: 8
+Passed: 4
+Failed: 4
+Average execution time: 3.39 seconds
+Slowest test: LOGIN (6.1 seconds)
+
+Test Summary:
+LOGIN  -> Passed: 2, Failed: 1
+UPLOAD -> Passed: 1, Failed: 2
+SEARCH -> Passed: 1, Failed: 1
+
+Flaky tests:
+LOGIN
+UPLOAD
+SEARCH
+
+
+Rules
+- Use loops, dictionaries, functions, and conditional statements.
+- Do not use external libraries such as Pandas.
+- Avoid hardcoding the expected results; calculate everything from logs.
+- Split the logic into reusable functions instead of writing everything in one block.
+Bonus challenge: Sort the test names by failure count, from highest to lowest.
