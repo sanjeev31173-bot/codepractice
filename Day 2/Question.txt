@@ -1,0 +1,52 @@
+Problem statement
+Imagine you have 8 tasks that need to run in a particular order. Some tasks depend on other tasks completing successfully.
+
+For example:
+- Install Dependencies must finish before Run Tests.
+- Run Tests must finish before Generate Report.
+- Generate Report must finish before Deploy.
+Your job is to build a Python program that determines which tasks can run, executes them in the correct order, and handles failures.
+Initial data
+tasks = {    "Install Dependencies": {        "depends_on": [],        "duration": 3    },    "Setup Database": {        "depends_on": [],        "duration": 5    },    "Run Tests": {        "depends_on": [            "Install Dependencies",            "Setup Database"        ],        "duration": 8    },    "Generate Report": {        "depends_on": ["Run Tests"],        "duration": 2    },    "Build Application": {        "depends_on": ["Install Dependencies"],        "duration": 6    },    "Deploy": {        "depends_on": [            "Generate Report",            "Build Application"        ],        "duration": 4    }}
+
+
+
+Your requirements
+1. Determine execution order
+
+Find a valid order in which all tasks can execute while respecting their dependencies.
+
+2. Simulate execution
+
+Execute tasks in order and print messages such as:
+[RUNNING] Install Dependencies
+[COMPLETED] Install Dependencies
+[RUNNING] Setup Database
+[COMPLETED] Setup Database
+
+
+3. Handle failures
+
+Allow a task to fail. If Run Tests fails, its dependent task Generate Report must not execute. Independent tasks should still be allowed to run.
+
+4. Detect circular dependencies
+
+Suppose Task A depends on Task B, Task B depends on Task C, and Task C depends on Task A. Your program must detect this cycle instead of running forever.
+
+5. Display a final summary
+
+Report the number of completed, failed, and skipped tasks, along with the total simulated execution time.
+Constraints
+- Use Python dictionaries, sets, functions, and loops.
+- Do not use external libraries.
+- Do not hardcode the execution order.
+- The program must work when tasks are added or removed.
+- Validate that every dependency refers to an existing task.
+Hints
+You'll need to explore these concepts:
+- Topological sorting to determine task order.
+- Graph traversal to detect circular dependencies.
+- Dependency checking to decide whether a task can execute.
+- Exception handling if you choose to simulate execution errors.
+Bonus challenge
+Add a feature that runs independent tasks in parallel conceptually and calculates the shortest possible total completion time. You don't need actual multithreading; calculate the schedule mathematically.

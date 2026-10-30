@@ -1,0 +1,412 @@
+{
+  "dataset_name": "Future Dependency Dataset 07",
+  "description": "Task dependencies are not limited to previous-numbered tasks. Task IDs are labels only; dependencies may reference numerically later tasks. Graph is acyclic and all dependencies exist.",
+  "task_count": 56,
+  "tasks": {
+    "Task_001": {
+      "depends_on": [
+        "Task_052"
+      ],
+      "duration": 14.8,
+      "should_fail": false
+    },
+    "Task_002": {
+      "depends_on": [
+        "Task_012",
+        "Task_014",
+        "Task_018",
+        "Task_055"
+      ],
+      "duration": 5.3,
+      "should_fail": true
+    },
+    "Task_003": {
+      "depends_on": [
+        "Task_007"
+      ],
+      "duration": 16.8,
+      "should_fail": false
+    },
+    "Task_004": {
+      "depends_on": [
+        "Task_007"
+      ],
+      "duration": 2.6,
+      "should_fail": false
+    },
+    "Task_005": {
+      "depends_on": [
+        "Task_025"
+      ],
+      "duration": 12.3,
+      "should_fail": true
+    },
+    "Task_006": {
+      "depends_on": [
+        "Task_031"
+      ],
+      "duration": 19.0,
+      "should_fail": false
+    },
+    "Task_007": {
+      "depends_on": [
+        "Task_022"
+      ],
+      "duration": 15.9,
+      "should_fail": false
+    },
+    "Task_008": {
+      "depends_on": [
+        "Task_053"
+      ],
+      "duration": 4.4,
+      "should_fail": false
+    },
+    "Task_009": {
+      "depends_on": [],
+      "duration": 12.0,
+      "should_fail": false
+    },
+    "Task_010": {
+      "depends_on": [
+        "Task_021",
+        "Task_029",
+        "Task_054"
+      ],
+      "duration": 13.3,
+      "should_fail": false
+    },
+    "Task_011": {
+      "depends_on": [],
+      "duration": 7.4,
+      "should_fail": false
+    },
+    "Task_012": {
+      "depends_on": [
+        "Task_001",
+        "Task_004"
+      ],
+      "duration": 18.0,
+      "should_fail": false
+    },
+    "Task_013": {
+      "depends_on": [],
+      "duration": 13.7,
+      "should_fail": false
+    },
+    "Task_014": {
+      "depends_on": [
+        "Task_022",
+        "Task_031",
+        "Task_040"
+      ],
+      "duration": 2.1,
+      "should_fail": false
+    },
+    "Task_015": {
+      "depends_on": [],
+      "duration": 17.5,
+      "should_fail": false
+    },
+    "Task_016": {
+      "depends_on": [
+        "Task_054"
+      ],
+      "duration": 13.8,
+      "should_fail": false
+    },
+    "Task_017": {
+      "depends_on": [],
+      "duration": 2.3,
+      "should_fail": false
+    },
+    "Task_018": {
+      "depends_on": [
+        "Task_049"
+      ],
+      "duration": 6.1,
+      "should_fail": false
+    },
+    "Task_019": {
+      "depends_on": [
+        "Task_014",
+        "Task_055"
+      ],
+      "duration": 14.1,
+      "should_fail": false
+    },
+    "Task_020": {
+      "depends_on": [
+        "Task_046"
+      ],
+      "duration": 19.8,
+      "should_fail": true
+    },
+    "Task_021": {
+      "depends_on": [
+        "Task_006",
+        "Task_016",
+        "Task_048",
+        "Task_049"
+      ],
+      "duration": 3.4,
+      "should_fail": false
+    },
+    "Task_022": {
+      "depends_on": [],
+      "duration": 2.9,
+      "should_fail": false
+    },
+    "Task_023": {
+      "depends_on": [
+        "Task_016",
+        "Task_019",
+        "Task_042",
+        "Task_049"
+      ],
+      "duration": 17.8,
+      "should_fail": false
+    },
+    "Task_024": {
+      "depends_on": [
+        "Task_003",
+        "Task_049"
+      ],
+      "duration": 1.3,
+      "should_fail": false
+    },
+    "Task_025": {
+      "depends_on": [
+        "Task_048"
+      ],
+      "duration": 1.8,
+      "should_fail": false
+    },
+    "Task_026": {
+      "depends_on": [
+        "Task_014",
+        "Task_031",
+        "Task_033"
+      ],
+      "duration": 5.5,
+      "should_fail": false
+    },
+    "Task_027": {
+      "depends_on": [
+        "Task_038"
+      ],
+      "duration": 7.5,
+      "should_fail": true
+    },
+    "Task_028": {
+      "depends_on": [
+        "Task_044"
+      ],
+      "duration": 12.9,
+      "should_fail": false
+    },
+    "Task_029": {
+      "depends_on": [
+        "Task_022"
+      ],
+      "duration": 8.9,
+      "should_fail": true
+    },
+    "Task_030": {
+      "depends_on": [
+        "Task_016"
+      ],
+      "duration": 11.9,
+      "should_fail": true
+    },
+    "Task_031": {
+      "depends_on": [
+        "Task_016"
+      ],
+      "duration": 19.0,
+      "should_fail": false
+    },
+    "Task_032": {
+      "depends_on": [
+        "Task_007"
+      ],
+      "duration": 17.7,
+      "should_fail": false
+    },
+    "Task_033": {
+      "depends_on": [
+        "Task_003",
+        "Task_036"
+      ],
+      "duration": 11.1,
+      "should_fail": false
+    },
+    "Task_034": {
+      "depends_on": [
+        "Task_032",
+        "Task_036",
+        "Task_048"
+      ],
+      "duration": 16.4,
+      "should_fail": false
+    },
+    "Task_035": {
+      "depends_on": [
+        "Task_053"
+      ],
+      "duration": 14.2,
+      "should_fail": false
+    },
+    "Task_036": {
+      "depends_on": [
+        "Task_049",
+        "Task_055"
+      ],
+      "duration": 3.0,
+      "should_fail": false
+    },
+    "Task_037": {
+      "depends_on": [
+        "Task_031"
+      ],
+      "duration": 17.5,
+      "should_fail": false
+    },
+    "Task_038": {
+      "depends_on": [],
+      "duration": 9.6,
+      "should_fail": false
+    },
+    "Task_039": {
+      "depends_on": [
+        "Task_016",
+        "Task_022"
+      ],
+      "duration": 7.5,
+      "should_fail": false
+    },
+    "Task_040": {
+      "depends_on": [
+        "Task_007",
+        "Task_039"
+      ],
+      "duration": 17.4,
+      "should_fail": false
+    },
+    "Task_041": {
+      "depends_on": [
+        "Task_033"
+      ],
+      "duration": 5.1,
+      "should_fail": false
+    },
+    "Task_042": {
+      "depends_on": [
+        "Task_016",
+        "Task_051"
+      ],
+      "duration": 8.9,
+      "should_fail": false
+    },
+    "Task_043": {
+      "depends_on": [
+        "Task_052"
+      ],
+      "duration": 4.4,
+      "should_fail": false
+    },
+    "Task_044": {
+      "depends_on": [
+        "Task_033",
+        "Task_038"
+      ],
+      "duration": 8.1,
+      "should_fail": false
+    },
+    "Task_045": {
+      "depends_on": [
+        "Task_017",
+        "Task_029",
+        "Task_043",
+        "Task_049"
+      ],
+      "duration": 11.7,
+      "should_fail": false
+    },
+    "Task_046": {
+      "depends_on": [
+        "Task_007",
+        "Task_012",
+        "Task_055"
+      ],
+      "duration": 8.5,
+      "should_fail": false
+    },
+    "Task_047": {
+      "depends_on": [
+        "Task_056"
+      ],
+      "duration": 9.7,
+      "should_fail": false
+    },
+    "Task_048": {
+      "depends_on": [
+        "Task_039"
+      ],
+      "duration": 15.7,
+      "should_fail": false
+    },
+    "Task_049": {
+      "depends_on": [],
+      "duration": 13.1,
+      "should_fail": false
+    },
+    "Task_050": {
+      "depends_on": [
+        "Task_040",
+        "Task_053"
+      ],
+      "duration": 1.3,
+      "should_fail": false
+    },
+    "Task_051": {
+      "depends_on": [
+        "Task_006",
+        "Task_036",
+        "Task_048",
+        "Task_056"
+      ],
+      "duration": 4.4,
+      "should_fail": false
+    },
+    "Task_052": {
+      "depends_on": [
+        "Task_054"
+      ],
+      "duration": 16.5,
+      "should_fail": false
+    },
+    "Task_053": {
+      "depends_on": [
+        "Task_040"
+      ],
+      "duration": 16.4,
+      "should_fail": false
+    },
+    "Task_054": {
+      "depends_on": [],
+      "duration": 7.4,
+      "should_fail": false
+    },
+    "Task_055": {
+      "depends_on": [],
+      "duration": 1.6,
+      "should_fail": false
+    },
+    "Task_056": {
+      "depends_on": [],
+      "duration": 17.6,
+      "should_fail": false
+    }
+  }
+}
